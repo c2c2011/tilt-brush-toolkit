@@ -13,7 +13,7 @@ Material:
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 2450
   stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
@@ -83,7 +83,9 @@ Material:
     - Boolean_5e08902ae2264f9cad04066e9c838644: 1
     - Boolean_ccfa06208231497e9ee36b3444ce43ac: 1
     - Vector1_7683367b3a324d5397407217add23608: 1
-    - Vector1_84bd9cc5c05e47a7a55776dc739f48f6: 0.035
+    - Vector1_84bd9cc5c05e47a7a55776dc739f48f6: 0.085
+    - Vector1_a735b74063134d73afc12ae5fbcc8ddb: 0.36
+    - Vector1_fbb47df2937646a59e66a9ebee2ea7cb: 0.531
     - _BumpScale: 1
     - _CellAmount: 4
     - _Cutoff: 0.5
