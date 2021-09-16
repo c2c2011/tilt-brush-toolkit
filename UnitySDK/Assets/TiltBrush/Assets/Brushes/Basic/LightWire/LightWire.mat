@@ -23,6 +23,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - Texture2D_599315806d824ab9aade71c6c70aa61b:
+        m_Texture: {fileID: 2800000, guid: ea466d6b6f5981a418210cf0db7aee16, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - Texture2D_7cc1569ec5ab475ebef759959328b817:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -52,22 +56,29 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_577edccb0841452493f741f21d1b56ff: 10.24
-    - Vector1_7683367b3a324d5397407217add23608: 1
-    - Vector1_84bd9cc5c05e47a7a55776dc739f48f6: 2.55
-    - Vector1_96e74f654340414f92b9941286e6e808: 0.41
-    - Vector1_a06045d2792d4f0b99c977b4fa510089: 1
-    - Vector1_a23fd0e00c3f44b4aa2844ebbe534cb3: 0.00583
-    - Vector1_ac95d1fbaf684fbc863cf391aafe19ea: 0.03
-    - Vector1_c7ce491301ae4ba3aaf89078428d6208: 0.85
+    - Boolean_02b0c0dc184e494b982ec2831d29e27f: 1
+    - Boolean_0f308cf0c2204a45b0979e796f174723: 1
+    - Boolean_374080be9ce9419a983af937241723ce: 1
+    - Boolean_524d0eea51204db78b99dc69679fe856: 0
+    - Vector1_2c432d9468eb4cce9a08811d9ae20945: 4.7
+    - Vector1_577edccb0841452493f741f21d1b56ff: 10.2
+    - Vector1_61732ada18fe495f90904fa1017766fa: 2.31
+    - Vector1_7683367b3a324d5397407217add23608: 0.7
+    - Vector1_84bd9cc5c05e47a7a55776dc739f48f6: 1.28
+    - Vector1_96e74f654340414f92b9941286e6e808: 0.499
+    - Vector1_a06045d2792d4f0b99c977b4fa510089: 2.04
+    - Vector1_a23fd0e00c3f44b4aa2844ebbe534cb3: 0.00266
+    - Vector1_ac95d1fbaf684fbc863cf391aafe19ea: 0.43
+    - Vector1_c7ce491301ae4ba3aaf89078428d6208: 0.824
     - _Cutoff: 0.5
     - _EmissionGain: 0.5
     - _EmissionLM: 0
     - _InvFade: 1
     - _Shininess: 0.81
     m_Colors:
+    - Color_211562ea2c514c5b990fded5cffc5dc3: {r: 0.3679245, g: 0.3679245, b: 0.3679245, a: 0}
     - Color_2ca6888f8e6b4df4838a0a56190ca5f2: {r: 0, g: 0, b: 0, a: 0}
-    - Color_86feff33dc9c4bc2bc28ed5d6e2dae3c: {r: 0, g: 0, b: 0, a: 0}
+    - Color_86feff33dc9c4bc2bc28ed5d6e2dae3c: {r: 1, g: 1, b: 1, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _SpecColor: {r: 0.3455882, g: 0.3455882, b: 0.3455882, a: 0}
     - _TintColor: {r: 0.5441177, g: 0.16886412, b: 0, a: 0.5019608}

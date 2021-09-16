@@ -130,6 +130,7 @@ SubShader {
   //   GltfCull Back
   Cull Back
   Pass{
+      Tags { "LightMode" = "UniversalForward" }
     CGPROGRAM
     #pragma vertex vert
     #pragma fragment fragColor
