@@ -17,6 +17,7 @@ Properties {
   _TintColor ("Tint Color", Color) = (0.5,0.5,0.5,0.5)
   _MainTex ("Particle Texture", 2D) = "white" {}
   _ScrollRate("Scroll Rate", Float) = 1.0
+  _Intensity ("Color Intensity", Range(0.1, 2.0)) = 1.0
 }
 
 Category {
@@ -43,6 +44,7 @@ Category {
 
       sampler2D _MainTex;
       fixed4 _TintColor;
+      fixed _Intensity;
 
       struct v2f {
         float4 vertex : SV_POSITION;
@@ -110,8 +112,8 @@ Category {
       fixed4 frag (v2f i) : SV_Target
       {
         float4 c =  tex2D(_MainTex, i.texcoord);
-        c *= i.color * _TintColor;
-        c = SrgbToNative(c);
+        c *= i.color * _TintColor * _Intensity;
+        //c = SrgbToNative(c);
         return c;
       }
       ENDCG

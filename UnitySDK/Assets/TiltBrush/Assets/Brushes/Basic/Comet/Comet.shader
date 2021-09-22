@@ -18,6 +18,7 @@ Properties {
   _AlphaMask("Alpha Mask", 2D) = "white" {}
   _Speed ("Animation Speed", Range (0,1)) = 1
   _EmissionGain ("Emission Gain", Range(0, 1)) = 0.5
+  _Intensity("Color Intensity", Range(0.1, 5.0)) = 1.0
 }
 
 Category {
@@ -43,6 +44,7 @@ Category {
       float4 _MainTex_ST;
       float4 _AlphaMask_ST;
       float _Speed;
+      float _Intensity;
       half _EmissionGain;
 
       struct appdata_t {
@@ -64,7 +66,8 @@ Category {
         v2f o;
 
         o.texcoord = TRANSFORM_TEX(v.texcoord,_MainTex);
-        o.color = TbVertToNative(v.color);
+        o.color = v.color * _Intensity;
+        //o.color = TbVertToNative(v.color);
 
 #ifdef AUDIO_REACTIVE
         float3 displacement = _BeatOutput.y * v.normal *

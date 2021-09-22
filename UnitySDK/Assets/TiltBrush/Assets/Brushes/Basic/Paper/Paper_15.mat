@@ -9,7 +9,8 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Paper_15
   m_Shader: {fileID: -6465566751694194690, guid: 52520deaab18aa84986e102463fa4a65, type: 3}
-  m_ShaderKeywords: _EMISSION
+  m_ShaderKeywords: BOOLEAN_558E5EF25C8D4948A5D9D1DE3E880584_ON BOOLEAN_D7D1D6E73B7F4A4C9F775CE255B2222F_ON
+    _EMISSION
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -76,9 +77,14 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - BOOLEAN_558E5EF25C8D4948A5D9D1DE3E880584: 1
+    - BOOLEAN_D7D1D6E73B7F4A4C9F775CE255B2222F: 1
+    - Boolean_10f7618faac4429f94d7ab2e78dfebba: 0
+    - Boolean_420d47fff25e4551842d5543b683d9d9: 0
     - Vector1_43d512ab2ecd4b68a10ca02a004c7f3a: 0
     - Vector1_7683367b3a324d5397407217add23608: 1
     - Vector1_7e140da91b024369b3c2752f10e96ce6: 0
+    - Vector1_9ad13ac4dc80418d801a917ac39565b0: 0.5
     - _BumpScale: 1
     - _Cutoff: 0.16
     - _DetailNormalMapScale: 1

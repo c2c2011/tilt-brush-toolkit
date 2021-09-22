@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: MatteHull_16
   m_Shader: {fileID: -6465566751694194690, guid: e5bf8593aee88ef41932c0c708089790, type: 3}
-  m_ShaderKeywords: _EMISSION
+  m_ShaderKeywords: BOOLEAN_USEBASECOLOR_ON BOOLEAN_USEEMISSION_ON _EMISSION
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -88,6 +88,8 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - BOOLEAN_USEBASECOLOR: 1
+    - BOOLEAN_USEEMISSION: 1
     - Boolean_1: 1
     - Boolean_1a6115acc30b435faaa4e56e9e741f9e: 0
     - Vector1_0f7e061867ad44748f1d4c935bf4277b: 0

@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Lofted_16
   m_Shader: {fileID: -6465566751694194690, guid: e5bf8593aee88ef41932c0c708089790, type: 3}
-  m_ShaderKeywords: 
+  m_ShaderKeywords: BOOLEAN_USEBASECOLOR_ON BOOLEAN_USEEMISSION_ON
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -52,6 +52,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - BOOLEAN_USEBASECOLOR: 1
+    - BOOLEAN_USEEMISSION: 1
+    - Boolean_1: 0
+    - Boolean_1a6115acc30b435faaa4e56e9e741f9e: 0
+    - Vector1_0f7e061867ad44748f1d4c935bf4277b: 0
     - Vector1_7683367b3a324d5397407217add23608: 1
     - _Cutoff: 0.5
     - _EmissionGain: 0.5
