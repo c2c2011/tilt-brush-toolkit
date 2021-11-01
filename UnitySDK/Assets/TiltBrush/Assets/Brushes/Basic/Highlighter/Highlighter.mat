@@ -4,10 +4,11 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: Highlighter
-  m_Shader: {fileID: 4800000, guid: e2d9c195722354e42a5a45e5b73a9f19, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: e93e382e610d1f641abc64a3ad7b6985, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_EnableInstancingVariants: 0
@@ -18,6 +19,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Texture2D_7cc1569ec5ab475ebef759959328b817:
+        m_Texture: {fileID: 2800000, guid: 2a6e115fa9494f2479d7a5284cbe2d3b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -30,7 +35,23 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
+    - BOOLEAN_A54E69A86362495BB601CBFC480C864D: 0
+    - Vector1_7683367b3a324d5397407217add23608: 1
+    - Vector1_8b14a7da717f4ceda97d0c9975f88d0b: 0.55
+    - Vector1_b02453c75d8a473186e7588172c2a0f1: 0.507
     - _Cutoff: 0.12
     - _DisplacementIntensity: 0.1
     - _EmissionGain: 0.25
@@ -40,8 +61,10 @@ Material:
     - _Smoothness: 0.078125
     - _Strength: 0.5
     m_Colors:
+    - Color_2ca6888f8e6b4df4838a0a56190ca5f2: {r: 1, g: 1, b: 1, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _TintColor: {r: 0.61764705, g: 0.61764705, b: 0.61764705, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1002 &2100001
 EditorExtensionImpl:
   serializedVersion: 6
