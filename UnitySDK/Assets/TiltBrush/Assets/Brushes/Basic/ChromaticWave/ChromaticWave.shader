@@ -46,6 +46,8 @@ Category {
         float4 vertex : POSITION;
         fixed4 color : COLOR;
         float2 texcoord : TEXCOORD0;
+
+        UNITY_VERTEX_INPUT_INSTANCE_ID //Insert
       };
 
       struct v2f {
@@ -53,12 +55,20 @@ Category {
         float4 color : COLOR;
         float2 texcoord : TEXCOORD0;
         float4 unbloomedColor : TEXCOORD1;
+
+        UNITY_VERTEX_INPUT_INSTANCE_ID  //Insert
+        UNITY_VERTEX_OUTPUT_STEREO  //Insert
       };
 
       v2f vert (appdata_t v)
       {
         v.color = TbVertToSrgb(v.color);
         v2f o;
+
+        UNITY_SETUP_INSTANCE_ID(v); //Insert
+        UNITY_INITIALIZE_OUTPUT(v2f, o); //Insert
+        UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o); //Insert
+
         o.vertex = UnityObjectToClipPos(v.vertex);
         o.texcoord = v.texcoord;
         o.color = bloomColor(v.color, _EmissionGain);

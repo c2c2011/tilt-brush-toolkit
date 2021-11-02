@@ -4,8 +4,9 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: UnlitHull_16
   m_Shader: {fileID: 4800000, guid: 0688c89ab91f95a49a7395fe0da3a0a6, type: 3}
   m_ShaderKeywords: _EMISSION
@@ -18,6 +19,14 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Texture2D_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_7cc1569ec5ab475ebef759959328b817:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Bottom:
         m_Texture: {fileID: 2800000, guid: 059556fb548714a49a84b78d32489d59, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -66,7 +75,22 @@ Material:
         m_Texture: {fileID: 2800000, guid: c0338e66658989f46b502d8980827ae6, type: 3}
         m_Scale: {x: 0.5, y: 0.5}
         m_Offset: {x: 16.29, y: 4.14}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Vector1_0f7e061867ad44748f1d4c935bf4277b: 0
+    - Vector1_7683367b3a324d5397407217add23608: 1
+    - Vector1_bccd97528bf74296b30a9cdaf1ba6886: 0
     - _BottomScale: 0.5
     - _BumpScale: 1
     - _Cutoff: 0.5
@@ -88,6 +112,8 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
+    - Color_2ca6888f8e6b4df4838a0a56190ca5f2: {r: 1, g: 1, b: 1, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.5, g: 0.5, b: 0.5, a: 0}
+  m_BuildTextureStacks: []

@@ -41,7 +41,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - BOOLEAN_A54E69A86362495BB601CBFC480C864D: 1
-    - Vector1_7683367b3a324d5397407217add23608: 1
+    - Vector1_7683367b3a324d5397407217add23608: 40
     - Vector1_8b14a7da717f4ceda97d0c9975f88d0b: 0
     - Vector1_b02453c75d8a473186e7588172c2a0f1: 0.529
     - _InvFade: 1

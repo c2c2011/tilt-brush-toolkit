@@ -1,3 +1,5 @@
+// Upgrade NOTE: replaced 'UNITY_INSTANCE_ID' with 'UNITY_VERTEX_INPUT_INSTANCE_ID'
+
 // Copyright 2017 Google Inc.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -48,11 +50,13 @@ Category {
       sampler2D _MainTex;
       fixed4 _TintColor;
 
-      struct v2f {
+     struct v2f {
         float4 vertex : SV_POSITION;
         fixed4 color : COLOR;
         float2 texcoord : TEXCOORD0;
         float waveform : TEXCOORD1;
+        UNITY_VERTEX_INPUT_INSTANCE_ID //insert
+        UNITY_VERTEX_OUTPUT_STEREO //Insert
       };
 
       float4 _MainTex_ST;
@@ -65,6 +69,11 @@ Category {
       {
         v.color = TbVertToSrgb(v.color);
         v2f o;
+
+        UNITY_SETUP_INSTANCE_ID(v); //Insert
+        UNITY_INITIALIZE_OUTPUT(v2f, o); //Insert
+        UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o); //Insert
+
         float birthTime = v.texcoord.w;
         float rotation = v.texcoord.z;
         float halfSize = GetParticleHalfSize(v.corner.xyz, v.center, birthTime);
@@ -93,6 +102,7 @@ Category {
 #ifdef AUDIO_REACTIVE
         // Deform uv's by waveform displacement amount vertically
         // Envelop by "V" UV to keep the edges clean
+        
         float vDistance = abs(i.texcoord.y - .5)*2;
         float vStretched = (i.texcoord.y - 0.5) * (.5 - abs(i.waveform)) * 2 + 0.5;
         i.texcoord.y = lerp(vStretched, i.texcoord.y, vDistance);

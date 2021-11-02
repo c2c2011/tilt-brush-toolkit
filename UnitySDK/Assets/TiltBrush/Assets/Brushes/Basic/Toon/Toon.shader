@@ -35,6 +35,8 @@ CGINCLUDE
     fixed4 color : COLOR;
     float3 normal : NORMAL;
     float3 texcoord : TEXCOORD0;
+
+    UNITY_VERTEX_INPUT_INSTANCE_ID //Insert
   };
 
   struct v2f {
@@ -42,12 +44,19 @@ CGINCLUDE
     fixed4 color : COLOR;
     float2 texcoord : TEXCOORD0;
     UNITY_FOG_COORDS(1)
+    UNITY_VERTEX_INPUT_INSTANCE_ID  //Insert
+    UNITY_VERTEX_OUTPUT_STEREO  //Insert
   };
 
   v2f vertInflate (appdata_t v, float inflate)
   {
 
     v2f o;
+
+    UNITY_SETUP_INSTANCE_ID(v); //Insert
+    UNITY_INITIALIZE_OUTPUT(v2f, o); //Insert
+    UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o); //Insert
+
     float outlineEnabled = inflate;
     float radius = v.texcoord.z;
     inflate *= radius * .4;
