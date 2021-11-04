@@ -72,6 +72,8 @@ Category {
         float halfSize = GetParticleHalfSize(v.corner.xyz, v.center, birthTime);
         float spreadProgress = SpreadProgress(birthTime, _SpreadRate);
         float4 center = SpreadParticle(v, spreadProgress);
+        float4 center_WS = mul(unity_ObjectToWorld, center);
+        float4 corner_WS = OrientParticle_WS(center_WS.xyz, halfSize, v.vid, rotation);
 
         float phase = v.color.a * (2 * PI);
         float brightness;
@@ -87,8 +89,8 @@ Category {
         o.texcoord = TRANSFORM_TEX(v.texcoord.xy,_MainTex);
 
         float4 corner = OrientParticle(center.xyz, halfSize, v.vid, rotation);
-        o.vertex = UnityObjectToClipPos(corner);
-
+        //o.vertex = UnityObjectToClipPos(corner);
+        o.vertex = mul(UNITY_MATRIX_VP, corner_WS);
         return o;
       }
 
